@@ -46,11 +46,11 @@ https://arweave.net/SOME_LONG_ID
 ```
 
 You'll be able to use this to access every individual image by going to your browser and typing
-https://arweave.net/SOME_LONG_ID/imagename.format
+"https://arweave.net/SOME_LONG_ID/imagename.format"
 E.g
-https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg
+"https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg"
 
-8. Once this is done go to each individual json file in your metadata folder and update the "image" part to be the link gotten from arweave with respective destinations. E.g https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg for 1.json e.t.c
+8. Once this is done go to each individual json file in your metadata folder and update the "image" part to be the link gotten from arweave with respective destinations. E.g "https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg" for 1.json e.t.c
 This is essential!
 After succesfully updating the the imageURI.
 Go on ahead and and upload the "metadata" folder with
