@@ -49,6 +49,7 @@ You'll be able to use this to access every individual image by going to your bro
 "https://arweave.net/SOME_LONG_ID/imagename.format"
 E.g
 "https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg"
+Note:These are just examples that dont lead to anywhere
 
 8. Once this is done go to each individual json file in your metadata folder and update the "image" part to be the link gotten from arweave with respective destinations. E.g "https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg" for 1.json e.t.c
 This is essential!
