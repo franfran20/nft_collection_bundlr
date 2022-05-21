@@ -3,7 +3,7 @@
 ### Check out the bundlr docs. Super easy to understand... 
 [Bundlr Docs](https://docs.bundlr.network/)
 
-Note: I'm not going to be explaining brownie here, its basically a framework for scripting and testing your smart contracts like hardhat. Instead I'll explain some part of the NFT(Unrelated NFT's) contract. You could easily modify the contract to fit your needs and test with a framework of your choice and focus on using bundlr itself to store data permanently on arweave.
+Note: I'm not going to be explaining brownie here, its basically a framework for scripting and testing your smart contracts like hardhat. Instead I'll explain some part of the NFT(Unrelated NFT's) contract. You could easily modify the contract to fit your needs and test with a framework of your choice as I'll be focusing on using bundlr itself to store data permanently on arweave.
 
 1. Install bundlr 
 ```
@@ -11,7 +11,7 @@ npm install -g @bundlr-network/client
 ```
 2. For Testing Bundlr has a devnet that you could use, Its compatible with the supported networks on mainnet. To work with bundlr devnet make use of "https://devnet.bundlr.network" and set a provider url for the respective testnet. For this example I'd be using Alchemy and Mumbai tesntet (matic). If you'd like to go mainnet use "https://node1.bundlr.network". Feel free to use whatever you like...
 
-3. Note: Anything stored on the devnet never actually moves with arweave and will be cleared from bundlr after a week.
+3. Note: Anything stored on the devnet never actually moves to arweave and will be cleared from bundlr after a week.
 
 4. To check your bundlr balance run the code below in your terminal. Your initial balance should be 0. Till you fund the a bundlr node. In this example I use matic(test-matic). You could check out the docs for other [Supported Currencies](https://docs.bundlr.network/docs/currencies)
 ```
