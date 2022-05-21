@@ -26,7 +26,8 @@ Balance: 0 wei (0 matic)
 ```
 bundlr fund 300000000000000000 -h "https://devnet.bundlr.network" -w "YOUR PRIVATE KEY" -c "matic" --provider-url "https://polygon-mumbai.g.alchemy.com/v2/YOUR_ALCHEMY_APP_ID"
 ```
-enter y
+You'll be prompted with a Y/N
+enter Y
 There's usually a fee. ON devnet its zero.
 Then check your balance again!
 Congrats! Time to for the good stuff...
