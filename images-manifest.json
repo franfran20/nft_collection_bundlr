@@ -1,0 +1,13 @@
+{
+"manifest": "arweave/paths",
+"version": "0.1.0",
+"paths": {
+"4.jpg":{"id":"0W0fwzJhxMbKsA6oLcjf3NthF_r8Mr9Zvo97YbAA4c4"},
+"2.jpg":{"id":"BiT0j09nO9SRobeB-z6Bcpu03FornUZkltyibWMcK5M"},
+"5.jpg":{"id":"KdIXEFt6al3gt7y_o4su_Lu1qr55FrU55uYsIFLZygM"},
+"7.jpg":{"id":"fpw9xU9ce_0G8ng7Zj-BpUC_PU6O8ANfXr8UlyRzpB0"},
+"3.jpg":{"id":"RZ0FNmG0NKS5evPXcLeweKtrCHyNCFxnD0QCYMYdq1w"},
+"6.jpg":{"id":"xNGaPKvPGKilFre6RIEqQ1Ps0HY44pbGMz6xzml6HuQ"},
+"1.jpg":{"id":"cVv8zPkBQtDTL2UlrLpzkF3gkErgn6mial5JfmsdkEg"}
+}
+}
