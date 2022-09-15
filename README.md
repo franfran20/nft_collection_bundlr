@@ -1,5 +1,5 @@
 # STEPS:
-## This is a way to interact with bundlr using the CLI. Bundlr has a JS Client method for interaction.
+## This is a way to interact with bundlr using the CLI.
 ### Check out the bundlr docs. Super easy to understand... 
 [Bundlr Docs](https://docs.bundlr.network/)
 
