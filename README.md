@@ -1,9 +1,9 @@
 # STEPS:
-## This is a way to interact with bundlr using the CLI.
+## Interacting with bundlr via the CLI
 ### Check out the bundlr docs. Super easy to understand... 
 [Bundlr Docs](https://docs.bundlr.network/)
 
-Note: I'm not going to be explaining brownie here, its basically a framework for scripting and testing your smart contracts like hardhat. Instead I'll explain some part of the NFT(Unrelated NFT's) contract. You could easily modify the contract to fit your needs and test with a framework of your choice as I'll be focusing on using bundlr itself to store data permanently on arweave.
+Note: My choice of framework for this project: brownie. You could easily modify the contract to fit your needs and test with a framework of your choice as I'll be focusing on using bundlr itself to store data permanently on arweave.
 
 1. Install bundlr 
 ```
@@ -11,9 +11,7 @@ npm install -g @bundlr-network/client
 ```
 2. For Testing Bundlr has a devnet that you could use, Its compatible with the supported networks on mainnet. To work with bundlr devnet make use of "https://devnet.bundlr.network" and set a provider url for the respective testnet. For this example I'd be using Alchemy and Mumbai tesntet (matic). If you'd like to go mainnet use "https://node1.bundlr.network". Feel free to use whatever you like...
 
-3. Note: Anything stored on the devnet never actually moves to arweave and will be cleared from bundlr after a week.
-
-4. To check your bundlr balance run the code below in your terminal. Your initial balance should be 0. Till you fund the a bundlr node. In this example I use matic(test-matic). You could check out the docs for other [Supported Currencies](https://docs.bundlr.network/docs/currencies)
+3. To check your bundlr balance run the code below in your terminal. Your initial balance should be 0. Till you fund the a bundlr node. In this example I use matic(test-matic). You could check out the docs for other [Supported Currencies](https://docs.bundlr.network/docs/currencies)
 ```
 bundlr balance "YOUR ADDRESS" -h "https://devnet.bundlr.network" -c "matic"
 ```
@@ -22,7 +20,7 @@ You should get:
 Balance: 0 wei (0 matic)
 ```
 
-5. Then fund a bundlr node. In this example I'm using 0.3 matic in atomic units(Wei i.e 10^18). If you're funding with Arweave its 10^12
+4. Then fund a bundlr node. In this example I'm using 0.3 matic in atomic units(Wei i.e 10^18). If you're funding with Arweave its 10^12
 ```
 bundlr fund 300000000000000000 -h "https://devnet.bundlr.network" -w "YOUR PRIVATE KEY" -c "matic" --provider-url "https://polygon-mumbai.g.alchemy.com/v2/YOUR_ALCHEMY_APP_ID"
 ```
@@ -32,9 +30,9 @@ There's usually a fee. ON devnet its zero.
 Then check your balance again!
 Congrats! Time to for the good stuff...
 
-6. Prepare a metadata folder and images folder for storing all your images and metadata(.json). Make sure the folders are in the same directory you installed bundlr. You could upload a folder or a single file using bundlr. For this example we'll be using a folder named "images" containing our images which we stored as 1.jpg, 2.jpg, 3.jpg e.t.c The same for our metadata saved as "metadata" with files 1.json, 2.json, 3.json e.t.c
+5. Prepare a metadata folder and images folder for storing all your images and metadata(.json). Make sure the folders are in the same directory you installed bundlr. You could upload a folder or a single file using bundlr. For this example we'll be using a folder named "images" containing our images which we stored as 1.jpg, 2.jpg, 3.jpg e.t.c The same for our metadata saved as "metadata" with files 1.json, 2.json, 3.json e.t.c
 
-7. Upload your images folder FIRST with bundlr
+6. Upload your images folder FIRST with bundlr
 ```
 bundlr upload-dir images -h "https://devnet.bundlr.network" -w "YOUR PRIVATE KEY" -c "matic"
 ```
@@ -51,7 +49,7 @@ E.g
 "https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg"
 Note:These are just examples that dont lead to anywhere
 
-8. Once this is done go to each individual json file in your metadata folder and update the "image" part to be the link gotten from arweave with respective destinations. E.g "https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg" for 1.json e.t.c
+7. Once this is done go to each individual json file in your metadata folder and update the "image" part to be the link gotten from arweave with respective destinations. E.g "https://arweave.net/19082991010hxjnc_gshcuw89/1.jpg" for 1.json e.t.c
 This is essential!
 After succesfully updating the the imageURI.
 Go on ahead and and upload the "metadata" folder with
